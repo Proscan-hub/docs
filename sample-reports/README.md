@@ -10,41 +10,59 @@ OWASP WebGoat is a deliberately vulnerable Java application maintained by the OW
 |--------|-------|
 | Files scanned | 583 |
 | Lines scanned | 31,213 |
-| Rules applied | 195,881 |
-| Findings | 19 |
+| Rules applied | 195,897 |
+| Findings | 23 |
+| False positives | 0 |
 
 ## Findings Detected
 
-| Severity | Finding | File |
-|----------|---------|------|
-| High | Java ObjectInputStream deserialization | VulnerableTaskHolder.java:48 |
-| High | Spring SpEL with user input (RCE) | LessonMenuService.java:34 |
-| High | Java Random for security | EncodingAssignment.java:37 |
-| High | RSA key size 1024 bits | SigningAssignment.java:44 |
-| High | Insecure deserialization | InsecureDeserializationTask.java:43 |
-| High | Insecure deserialization | SerializationHelper.java:22 |
-| High | Session hijack via insecure deserialization | HijackSessionAssignment.java:46 |
-| High | Password in API response | JWTRefreshEndpoint.java:59 |
-| High | Password change without verification | SimpleMailAssignment.java:59 |
-| High | Session spoof via insecure deserialization | SpoofCookieAssignment.java:46 |
-| High | Spring Security CSRF disabled | WebSecurityConfig.java:47 |
-| High | Password in config file | messages_de.properties:11 |
-| High | Password in config file | messages_nl.properties:8 |
-| High | Password in config file | messages.properties:8 |
-| High | SQL query with concatenation | clientSideFilteringFree.js:41 |
-| High | Password autocomplete enabled | IDOR.html:30 |
-| High | Password in API response | credentials.js:5 |
-| High | Unrestricted file upload | path_traversal.js:45 |
-| High | Password in API response | credentials.js:5 |
+| # | Severity | Finding | File | CWE |
+|---|----------|---------|------|-----|
+| 1 | High | Java ObjectInputStream deserialization | VulnerableTaskHolder.java:48 | CWE-502 |
+| 2 | High | Command Injection via Runtime.exec | VulnerableTaskHolder.java:67 | CWE-78 |
+| 3 | High | Spring SpEL with user input (RCE) | LessonMenuService.java:34 | CWE-917 |
+| 4 | High | Java Random for security | EncodingAssignment.java:37 | CWE-330 |
+| 5 | High | Java Random for security | HashingAssignment.java:55 | CWE-330 |
+| 6 | High | RSA key size 1024 bits | SigningAssignment.java:44 | CWE-326 |
+| 7 | High | Insecure deserialization | InsecureDeserializationTask.java:43 | CWE-502 |
+| 8 | High | Insecure deserialization | SerializationHelper.java:22 | CWE-502 |
+| 9 | High | Session hijack via insecure deserialization | HijackSessionAssignment.java:46 | CWE-384 |
+| 10 | High | Password change without verification | SimpleMailAssignment.java:59 | CWE-620 |
+| 11 | High | Session spoof via insecure deserialization | SpoofCookieAssignment.java:46 | CWE-384 |
+| 12 | High | XML External Entity (XXE) Injection | CommentsCache.java:71 | CWE-611 |
+| 13 | High | Spring Security CSRF disabled | WebSecurityConfig.java:47 | CWE-352 |
+| 14 | High | Password in config file | messages_de.properties:11 | CWE-798 |
+| 15 | High | Password in config file | messages_nl.properties:12 | CWE-798 |
+| 16 | High | Password in config file | messages.properties:17 | CWE-798 |
+| 17 | High | SQL query with concatenation (JavaScript) | clientSideFilteringFree.js:41 | CWE-89 |
+| 18 | High | DOM XSS via innerHTML | clientSideFiltering.js:6 | CWE-79 |
+| 19 | High | Password field with autocomplete | IDOR.html:30 | CWE-522 |
+| 20 | High | Password in API response | credentials.js:5 | CWE-200 |
+| 21 | High | Serializing secrets across component boundary | jwt-refresh.js:10 | CWE-200 |
+| 22 | High | Unrestricted file upload | path_traversal.js:45 | CWE-434 |
+| 23 | High | Password in API response | credentials.js:5 | CWE-200 |
+
+## Vulnerability Categories Detected
+
+- Insecure Deserialization (CWE-502) — 5 instances
+- Hardcoded Credentials (CWE-798) — 3 instances
+- Sensitive Data Exposure (CWE-200) — 3 instances
+- Weak Cryptography (CWE-326, CWE-330) — 3 instances
+- XML External Entity (CWE-611) — 1 instance
+- Command Injection (CWE-78) — 1 instance
+- Expression Language Injection (CWE-917) — 1 instance
+- SQL Injection (CWE-89) — 1 instance
+- Cross-Site Scripting (CWE-79) — 1 instance
+- Cross-Site Request Forgery (CWE-352) — 1 instance
+- Unrestricted File Upload (CWE-434) — 1 instance
+- Password Management (CWE-522, CWE-620) — 2 instances
 
 ## Report Files
 
 | File | Description |
 |------|-------------|
-| [sast-scan-results.json](sast-scan-results.json) | Full SAST scan output with per-file details and all findings |
-| [pci-dss-compliance.json](pci-dss-compliance.json) | PCI DSS compliance report mapping (structural example) |
-| [executive-summary.json](executive-summary.json) | Executive summary report (structural example) |
-| [sarif-output.json](sarif-output.json) | SARIF 2.1.0 output format (structural example) |
-| [cyclonedx-sbom.json](cyclonedx-sbom.json) | CycloneDX SBOM format (structural example) |
-
-The SAST scan results file contains real output. The compliance, executive summary, SARIF, and SBOM files show the report structure with sample data.
+| [sast-scan-results.json](sast-scan-results.json) | Full SAST scan output with per-file details and all 23 findings |
+| [pci-dss-compliance.json](pci-dss-compliance.json) | PCI DSS 4.0 compliance report structure |
+| [executive-summary.json](executive-summary.json) | Executive summary report structure |
+| [sarif-output.json](sarif-output.json) | SARIF 2.1.0 output format |
+| [cyclonedx-sbom.json](cyclonedx-sbom.json) | CycloneDX 1.5 SBOM format |
