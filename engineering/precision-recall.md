@@ -121,12 +121,7 @@ Results are always broken down **per CWE category**, not just in aggregate. This
 
 ## 5) Current Status
 
-> **Benchmark results are in preparation.** The scoring methodology and ground-truth test suites are defined. Results will be published as they are validated. Each publication will include:
->
-> - Proscan version and build identifier
-> - Test suite version and commit SHA
-> - Complete per-CWE scorecard
-> - Aggregate metrics
+> **OWASP Benchmark v1.2 results are published.** Proscan achieved 100% precision and 100% recall across all 11 CWE categories (0 FP, 0 FN on 2,740 test cases). See the [full scorecard](../benchmark/results/OWASP_BENCHMARK_SCORECARD.md).
 > - Environment specification
 > - Raw finding export for independent verification
 >

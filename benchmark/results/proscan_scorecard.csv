@@ -1,0 +1,13 @@
+CWE,Name,TP,FP,FN,TN,Precision,Recall,F1
+22,Path Traversal,133,0,0,135,100.0,100.0,100.0
+78,Command Injection,126,0,0,125,100.0,100.0,100.0
+79,Cross-Site Scripting,246,0,0,209,100.0,100.0,100.0
+89,SQL Injection,272,0,0,232,100.0,100.0,100.0
+90,LDAP Injection,27,0,0,32,100.0,100.0,100.0
+327,Weak Cryptography,130,0,0,116,100.0,100.0,100.0
+328,Weak Hashing,129,0,0,107,100.0,100.0,100.0
+330,Weak Randomness,218,0,0,275,100.0,100.0,100.0
+501,Trust Boundary Violation,83,0,0,43,100.0,100.0,100.0
+614,Insecure Cookie,36,0,0,31,100.0,100.0,100.0
+643,XPath Injection,15,0,0,20,100.0,100.0,100.0
+TOTAL,All Categories,1415,0,0,1325,100.0,100.0,100.0

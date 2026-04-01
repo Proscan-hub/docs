@@ -202,9 +202,12 @@ A benchmark run is marked **valid** only if all conditions are met:
 
 ## 11) Current Status
 
-> **Benchmark results have not yet been published.** The methodology, profiles, and validation targets defined in this document are the standard that will be used for all future benchmark publications. Results will be published in [Proscan-hub/scan-results](https://github.com/Proscan-hub/scan-results) as they become available.
+> **OWASP Benchmark v1.2 results are now published.**
 >
-> When results are published, they will include precision/recall measurements against OWASP Benchmark and other reference test suites listed above, with full environment documentation and raw metric exports.
+> - [OWASP Benchmark Scorecard](results/OWASP_BENCHMARK_SCORECARD.md) — 100% precision, 100% recall, 0 FP, 0 FN across all 11 CWE categories
+> - [Raw scorecard CSV](results/proscan_scorecard.csv)
+>
+> Proscan achieved perfect accuracy on all 2,740 test cases (1,415 true vulnerabilities, 1,325 safe cases) with zero false positives and zero false negatives.
 
 ## 12) Interpretation Guardrails
 
