@@ -6,11 +6,11 @@ Real screenshots and video clips from Proscan v9.0 Enterprise. All content shows
 
 ## Video: Product Overview (21 seconds)
 
-<video src="videos/proscan-overview-21s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/proscan-overview-21s.mp4
 
 ## Video: Product Highlights (83 seconds)
 
-<video src="videos/proscan-highlights-83s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/proscan-highlights-83s.mp4
 
 ---
 
@@ -18,7 +18,7 @@ Real screenshots and video clips from Proscan v9.0 Enterprise. All content shows
 
 ### Video: Dashboard Preview (7 seconds)
 
-<video src="videos/dashboard-preview-7s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/dashboard-preview-7s.mp4
 
 The unified dashboard shows your security posture across all active scanners — total findings, severity breakdown, 7-day trend, and real-time scanner status.
 
@@ -30,11 +30,11 @@ The unified dashboard shows your security posture across all active scanners —
 
 ### Video: SAST Dashboard (30 seconds)
 
-<video src="videos/sast-dashboard-30s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/sast-dashboard-30s.mp4
 
 ### Video: SAST Findings Walkthrough (37 seconds)
 
-<video src="videos/sast-findings-37s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/sast-findings-37s.mp4
 
 ### Configure and Start a Scan
 
@@ -100,11 +100,11 @@ Identifies all cryptographic algorithms used in the binary — algorithm type, k
 
 ### Video: Live Scan Progress (19 seconds)
 
-<video src="videos/dast-live-progress-19s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/dast-live-progress-19s.mp4
 
 ### Video: Deep Scan Findings (34 seconds)
 
-<video src="videos/dast-deep-findings-34s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/dast-deep-findings-34s.mp4
 
 ### Configure Target
 
@@ -128,7 +128,7 @@ Findings listed with severity, verification status, URL, and parameter. Verified
 
 ## All Scanners Overview (60 seconds)
 
-<video src="videos/scanners-overview-60s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/scanners-overview-60s.mp4
 
 ---
 
@@ -136,11 +136,11 @@ Findings listed with severity, verification status, URL, and parameter. Verified
 
 ### Getting Started Guide (45 seconds)
 
-<video src="videos/guide-intro-45s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/guide-intro-45s.mp4
 
 ### Product Demo (45 seconds)
 
-<video src="videos/ready-demo-45s.mp4" width="100%" controls></video>
+https://github.com/Proscan-hub/docs/raw/main/screenshots/videos/ready-demo-45s.mp4
 
 ---
 
