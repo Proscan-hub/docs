@@ -38,6 +38,20 @@ Documentation for [Proscan](https://proscan.one), the on-premises application se
 - [Methodology](compliance/methodology.md)
 - [Generating Reports](compliance/reports.md)
 
+### Screenshots
+- [Platform Screenshots](screenshots/README.md) — real screenshots of the dashboard, SAST, DAST, Binary Analysis, and AI/LLM scanner
+
+### Changelog
+- [Changelog](changelog/README.md) — version history and what changed
+
+### Evaluation
+- [How to Evaluate a SAST Tool](evaluation-guide/README.md) — methodology, metrics, and test suites
+- [FAQ](faq/README.md) — common questions answered
+
+### Coverage
+- [Supported CWE Catalog](supported-cwes/README.md) — all CWEs detected across all scanners
+- [Language Support Matrix](language-support/README.md) — analysis capabilities per language
+
 ### Whitepaper and Architecture
 - [Whitepaper](whitepaper/README.md)
 - [Entire Application Architecture Diagram](architecture/application-architecture.md)
