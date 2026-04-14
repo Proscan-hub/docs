@@ -6,7 +6,7 @@
 |----------|---------|-------------|
 | RAM | 8 GB | 16 GB |
 | CPU | 4 cores | 8 cores |
-| Disk | 20 GB free | 50 GB free |
+| Disk | 2 GB free | 10 GB free |
 
 ## Software
 

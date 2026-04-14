@@ -5,7 +5,7 @@ Proscan runs as a Docker container. One command to install, browser-based UI for
 ## Prerequisites
 
 - **Docker Desktop** (Windows/macOS) or **Docker Engine** (Linux) — installed and running
-- **8 GB RAM** minimum (16 GB recommended), 4 CPU cores, 20 GB free disk
+- **8 GB RAM** minimum (16 GB recommended), 4 CPU cores, 2 GB free disk
 
 ## Step 1: Start the Launcher
 
