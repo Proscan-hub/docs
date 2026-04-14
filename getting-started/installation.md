@@ -10,8 +10,11 @@ Proscan runs as a Docker container. One command to install, browser-based UI for
 ## Step 1: Start the Launcher
 
 docker pull proscanappsec/launcher:latest
+
 docker stop proscan && docker rm proscan
+
 docker run -d --name proscan -p 9090:9090 -v /var/run/docker.sock:/var/run/docker.sock proscanappsec/launcher
+
 ```
 
 **Windows PowerShell:**
