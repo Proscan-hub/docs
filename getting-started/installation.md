@@ -15,12 +15,12 @@ docker run -d \
   --restart unless-stopped \
   -p 9090:9090 \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  registry.proscan.one:2083/proscan/launcher
+  proscanappsec/launcher
 ```
 
 **Windows PowerShell:**
 ```powershell
-docker run -d --name proscan --restart unless-stopped -p 9090:9090 -v //var/run/docker.sock:/var/run/docker.sock registry.proscan.one:2083/proscan/launcher
+docker run -d --name proscan --restart unless-stopped -p 9090:9090 -v //var/run/docker.sock:/var/run/docker.sock proscanappsec/launcher
 ```
 
 ## Step 2: Open the Launcher
@@ -149,7 +149,7 @@ Contact [contact@proscan.one](mailto:contact@proscan.one) for assistance with ai
 
 **Port already in use** — Start with a different port:
 ```bash
-docker run -d --name proscan -p 9091:9090 -v /var/run/docker.sock:/var/run/docker.sock registry.proscan.one:2083/proscan/launcher
+docker run -d --name proscan -p 9091:9090 -v /var/run/docker.sock:/var/run/docker.sock proscanappsec/launcher
 ```
 
 ---
