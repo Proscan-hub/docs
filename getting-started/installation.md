@@ -7,31 +7,7 @@ Proscan runs as a Docker container. One command to install, browser-based UI for
 - **Docker Desktop** (Windows/macOS) or **Docker Engine** (Linux) — installed and running
 - **8 GB RAM** minimum (16 GB recommended), 4 CPU cores, 20 GB free disk
 
-## Step 1: Configure Docker (One-Time)
-
-Add the Proscan registry to Docker's insecure registries:
-
-**Docker Desktop (Windows / macOS):**
-1. Open Docker Desktop → Settings → Docker Engine
-2. Add to the JSON config:
-```json
-{
-  "insecure-registries": ["registry.proscan.one:5000"]
-}
-```
-3. Click "Apply & Restart"
-
-**Linux:**
-```bash
-sudo tee /etc/docker/daemon.json <<EOF
-{
-  "insecure-registries": ["registry.proscan.one:5000"]
-}
-EOF
-sudo systemctl restart docker
-```
-
-## Step 2: Start the Launcher
+## Step 1: Start the Launcher
 
 ```bash
 docker run -d \
@@ -39,19 +15,19 @@ docker run -d \
   --restart unless-stopped \
   -p 9090:9090 \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  proscan/launcher:latest
+  registry.proscan.one:2083/proscan/launcher
 ```
 
 **Windows PowerShell:**
 ```powershell
-docker run -d --name proscan --restart unless-stopped -p 9090:9090 -v //var/run/docker.sock:/var/run/docker.sock proscan/launcher:latest
+docker run -d --name proscan --restart unless-stopped -p 9090:9090 -v //var/run/docker.sock:/var/run/docker.sock registry.proscan.one:2083/proscan/launcher
 ```
 
-## Step 3: Open the Launcher
+## Step 2: Open the Launcher
 
 Open your browser and go to **http://localhost:9090**
 
-## Step 4: Create Account
+## Step 3: Create Account
 
 - Click **"Create Account"**
 - Enter your email and password
@@ -63,7 +39,7 @@ Choose one of:
 - **Start 15-Day Free Trial** — full access, no payment required
 - **Purchase a Plan** — pay with cryptocurrency (USDT, BTC)
 
-## Step 6: Setup Wizard
+## Step 5: Setup Wizard
 
 The wizard walks you through:
 
@@ -81,7 +57,7 @@ After the wizard completes:
 - PostgreSQL, Redis, and the backend start automatically
 - Database migrations run on first start
 
-## Step 8: Start Scanning
+## Step 7: Start Scanning
 
 Once all services show green/running in the dashboard:
 - Click **"Open ProScan"** or go to **http://localhost:18080**
@@ -173,7 +149,7 @@ Contact [contact@proscan.one](mailto:contact@proscan.one) for assistance with ai
 
 **Port already in use** — Start with a different port:
 ```bash
-docker run -d --name proscan -p 9091:9090 -v /var/run/docker.sock:/var/run/docker.sock proscan/launcher:latest
+docker run -d --name proscan -p 9091:9090 -v /var/run/docker.sock:/var/run/docker.sock registry.proscan.one:2083/proscan/launcher
 ```
 
 ---
